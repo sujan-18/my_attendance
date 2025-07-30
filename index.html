@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take_my_attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="card-wrapper">
+    <div class="card" id="card">
+      
+      <!-- FRONT SIDE -->
+      <div class="card-face card-front">
+        <h2 id="dayOfWeek">Monday</h2>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <input type="date" id="dateInput" />
+        <button onclick="markAttendance()">Submit</button>
+      </div>
+
+      <!-- BACK SIDE -->
+      <div class="card-face card-back">
+        <h3>✅ Attendance added successfully!</h3>
+        <input type="text" id="searchName" placeholder="Enter name to check attendance" />
+        <button onclick="viewAttendance()">Check Attendance</button>
+        <div id="summaryResult"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
